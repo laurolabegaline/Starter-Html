@@ -11,22 +11,32 @@
       <form action="">
          <fieldset>
             <legend>Contato</legend>
-            <label for="">Nome</label>
-            <input type="text" name="" id="" />
+            <label for="nome">Nome</label>
+            <input type="nome" />
+            <br />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" id="email" autocomplete="email" />
+            <br />
+            <br />
+            <label for="msg">Mensagem</label>
+            <input type="text" name="" id="msg" />
             <button>Enviar</button>
          </fieldset>
       </form>
       <!--
+          Atributos inputs
+
         - autocomplete {Boleam}
         - autofocus {Boleam}
         - disable {Boleam}
         - readonly {Boleam /Padrão}
-        - value - Nome aqui
+        - value -
         - form (Quase todos)
         - name
-        - required (Quase todos)
+        - required (Quase todos) Campor obrigatorio
+        - Placeholder (password, search (Exemplo digite sua senha))
 
       -->
-      <input type="number" autocomplete="tel" />
    </body>
 </html>
