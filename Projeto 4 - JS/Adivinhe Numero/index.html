@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Adivinhe o número!</title>
+	</head>
+	<body>
+		<script>
+			var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+
+			var palpites = document.querySelector(".palpites");
+			var ultimoResultado = document.querySelector(".ultimoResultado");
+			var baixoOuAlto = document.querySelector(".baixoOuAlto");
+
+			var envioPalpite = document.querySelector(".envioPalpite");
+			var campoPalpite = document.querySelector(".campoPalpite");
+
+			var contagemPalpites = 1;
+			var botaoReinicio;
+
+			function coferirPalpite() {
+				alert("Eu sou um placholder");
+			}
+			conferirPalpite();
+		</script>
+
+		<p class="palpites"></p>
+		<p class="ultimoResultado"></p>
+		<p class="baixoOuAlto"></p>
+		<label for="campoPalpite">Digite seu palpite: </label
+		><input type="text" id="campoPalpite" class="campoPalpite" />
+		<input type="submit" value="Enviar palpite" class="envioPalpite" />
+	</body>
+</html>
